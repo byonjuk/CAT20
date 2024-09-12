@@ -100,7 +100,7 @@ create_wallet() {
   sudo yarn cli wallet create
   echo -e "\n"
   sudo yarn cli wallet address
-  echo -e "이 지갑 주소랑 프라이빗키랑 다 어디 저장해 주세요. 잃어버려도 확인 안 해줄 거임."
+  echo -e "이 지갑 주소랑 복구구문이랑 다 어디 저장해 주세요. 잃어버려도 확인 안 해줄 거임."
 }
 
 # CAT 토큰 발행 시작
@@ -123,7 +123,7 @@ check_wallet_balance() {
 }
 
 # 메인 메뉴
-echo && echo -e " ${Red_font_prefix}Dusk network 자동 설치 스크립트${Font_color_suffix} by oooooyoung
+echo && echo -e "${Red_font_prefix}Dusk network 자동 설치 스크립트${Font_color_suffix} by oooooyoung
 이 스크립트는 오픈소스이고 @ouyoung11이라는 유저가 개발한 것을 한국어로 옮겨 쓴 겁니다.
 ${Blue_font_prefix}전지전능하고 위대한 중국인에게 감사를 드립시다. ${Font_color_suffix}
  ———————————————————————
