@@ -99,7 +99,7 @@ create_wallet() {
   sudo yarn cli wallet create
   echo -e "\n"
   sudo yarn cli wallet address
-  echo -e "지갑 주소와 비밀 키를 안전하게 저장하십시오."
+  echo -e "이 지갑 주소랑 프라이빗키랑 다 어디 저장해 주세요. 잃어버려도 확인 안 해줄 거임."
 }
 
 # CAT 토큰 발행 시작
@@ -123,17 +123,17 @@ check_wallet_balance() {
 
 # 메인 메뉴
 echo && echo -e " ${Red_font_prefix}Dusk Network 자동 설치 스크립트${Font_color_suffix} by oooooyoung
-이 스크립트는 오픈소스이고 @ouyoung11이라는 트위터 유저가 개발한 것을 한국어로 옮겨 쓴 겁니다. 위대한 중국인을 찬양하시오
+이 스크립트는 오픈소스이고 @ouyoung11이라는 트위터 유저가 개발한 것을 한국어로 옮겨 쓴 겁니다. 위대한 중국인에게 감사드립니다
  ———————————————————————
- ${Green_font_prefix} 1. 의존성 설치 및 풀 노드 설치 ${Font_color_suffix}
- ${Green_font_prefix} 2. 지갑 생성 ${Font_color_suffix}
- ${Green_font_prefix} 3. CAT 토큰 발행 ${Font_color_suffix}
- ${Green_font_prefix} 4. 노드 동기화 로그 확인 ${Font_color_suffix}
- ${Green_font_prefix} 5. 지갑 잔액 확인 ${Font_color_suffix}
+ ${Green_font_prefix} 1. 기본파일 설치 및 CAT20 노드 설치. ${Font_color_suffix}
+ ${Green_font_prefix} 2. 노드 운용에 쓰일 지갑을 생성하고 싶어요. ${Font_color_suffix}
+ ${Green_font_prefix} 3. CAT 토큰을 발행하고 싶어요. ${Font_color_suffix}
+ ${Green_font_prefix} 4. 노드 잘 돌아가는지 체크하고 싶어요. ${Font_color_suffix}
+ ${Green_font_prefix} 5. 지갑에 잔액이 얼마나 있는지 확인하고 싶어요. ${Font_color_suffix}
  ———————————————————————" && echo
 
 # 사용자 입력 대기
-read -e -p " 위의 단계를 참고하여 숫자를 입력하세요: " num
+read -e -p " 어떤 과정을 하고 싶으신가요? 위 항목을 참고해 숫자를 입력해 주세요: " num
 case "$num" in
 1)
     install_env_and_full_node
@@ -151,6 +151,6 @@ case "$num" in
     check_wallet_balance
     ;;
 *)
-    echo -e "${Error} 잘못된 입력입니다."
+    echo -e "${Error} 숫자 못 읽음? 진짜 병신이니 눈깔 삐엇니? 죽어 그냥 자살해 시발 1~5 하나 제대로 입력 못하는 주제에 무슨 노드를 쳐 돌려 에휴 시발 병신 그냥 죽어라 걍 에휴 ㅄ;;;;;;;;"
     ;;
 esac
