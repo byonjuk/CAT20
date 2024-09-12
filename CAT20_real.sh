@@ -24,17 +24,13 @@ check_root() {
 install_env_and_full_node() {
     check_root
     sudo apt update && sudo apt upgrade -y
-    sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential git make ncdu unzip zip -y
-	curl -fsSL https://get.docker.com -o get-docker.sh 
-	sudo sh get-docker.sh
+    sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential git make ncdu unzip zip docker.io -y
 
     # 최신 Docker Compose 설치
-	sudo curl -L https://github.com/docker/compose/releases/download/$(curl --silent https://api.github.com/repos/docker/compose/releases/latest | jq .name -r)/docker-compose-$(uname -s)-$(uname -m) -o /usr/bin/docker-compose
-	sudo chmod 755 /usr/bin/docker-compose
-
-	#업그레이드 한 번 더 해주자.
-	sudo apt autoremove -y
-	sudo apt-get upgrade -y
+    VERSION=$(curl --silent https://api.github.com/repos/docker/compose/releases/latest | grep -Po '"tag_name": "\K.*\d')
+    DESTINATION=/usr/local/bin/docker-compose
+    sudo curl -L https://github.com/docker/compose/releases/download/${VERSION}/docker-compose-$(uname -s)-$(uname -m) -o $DESTINATION
+    sudo chmod 755 $DESTINATION
 
     # npm 설치 및 설정
     sudo apt-get install npm -y
