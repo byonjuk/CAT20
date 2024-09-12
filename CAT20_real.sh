@@ -2,6 +2,7 @@
 
 # 변수 설정
 Crontab_file="/usr/bin/crontab"
+Blue_font_prefix="\033[34m"
 Green_font_prefix="\033[32m"
 Red_font_prefix="\033[31m"
 Green_background_prefix="\033[42;37m"
@@ -122,8 +123,9 @@ check_wallet_balance() {
 }
 
 # 메인 메뉴
-echo && echo -e " ${Red_font_prefix}Dusk Network 자동 설치 스크립트${Font_color_suffix} by oooooyoung
-이 스크립트는 오픈소스이고 @ouyoung11이라는 트위터 유저가 개발한 것을 한국어로 옮겨 쓴 겁니다. 위대한 중국인에게 감사드립니다
+echo && echo -e " ${Red_font_prefix}Dusk network 자동 설치 스크립트${Font_color_suffix} by oooooyoung
+이 스크립트는 오픈소스이고 @ouyoung11이라는 유저가 개발한 것을 한국어로 옮겨 쓴 겁니다.
+ ${Blue_font_prefix} 전지전능하고 위대한 중국인에게 감사를 드립시다. ${Font_color_suffix}
  ———————————————————————
  ${Green_font_prefix} 1. 기본파일 설치 및 CAT20 노드 설치. ${Font_color_suffix}
  ${Green_font_prefix} 2. 노드 운용에 쓰일 지갑을 생성하고 싶어요. ${Font_color_suffix}
