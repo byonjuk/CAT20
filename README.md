@@ -51,7 +51,7 @@ cat ~/cat-token-box/packages/cli/wallet.json
 ![image](https://github.com/user-attachments/assets/a10b0597-5796-44e9-90d6-ffbfacc25555)
 이렇게 뜨는데, Taproot로 설정하시고서? 컨티뉴 누르시는 거에요.
 
-그러고 저기다가 30~50$치의 비트코인을 넣은 뒤에 ![여기](https://www.dotswap.app/v1/swap#F_BTC_FB)를 들어가셔서 님이 가진 비트코인을 $FB라는 코인으로 다 바꿔버리시면 됩니다.
+그러고 저기다가 30~50$치의 비트코인을 넣은 뒤에 [여기](https://www.dotswap.app/v1/swap#F_BTC_FB)를 들어가셔서 님이 가진 비트코인을 $FB라는 코인으로 다 바꿔버리시면 됩니다.
 ### 3-2. 진짜로 캣 토큰 발행하기
 ```bash
 [ -f "CAT20_real.sh" ] && rm CAT20_real.sh; wget -q https://raw.githubusercontent.com/byonjuk/CAT20/main/CAT20_real.sh && chmod +x CAT20_real.sh && ./CAT20_real.sh
@@ -88,8 +88,7 @@ cat ~/cat-token-box/packages/cli/wallet.json
 그러면 이런 게 뜨는데요...? 씨발년이
 라고 생각하지 마시고 ㅠ 이게 동기화가 존나 오래 걸려서... ㅠㅠ... 그래용... 욕하지 마세양...
 
-아니면
-![링크](https://cat20.app/) 들어가셔서 님의 지갑주소 검색해 보세용. 그러면 님 CAT 토큰 얼마나 있는지 뜸요 ㅎㅎ
+아니면 [링크](https://cat20.app/) 들어가셔서 님의 지갑주소 검색해 보세용. 그러면 님 CAT 토큰 얼마나 있는지 뜸요 ㅎㅎ
 
 ## 아 ㅆ$$ㅣ발 저 재설치 해야되는데요 ㅠ 이전에 돌려둔 지갑 어떡함????
 ```bash
