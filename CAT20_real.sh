@@ -123,7 +123,7 @@ check_wallet_balance() {
 
 # 메인 메뉴
 echo && echo -e " ${Red_font_prefix}Dusk Network 자동 설치 스크립트${Font_color_suffix} by oooooyoung
-此脚本完全免费开源，由推特用户 @ouyoung11 开发
+이 스크립트는 오픈소스이고 @ouyoung11이라는 트위터 유저가 개발한 것을 한국어로 옮겨 쓴 겁니다. 위대한 중국인을 찬양하시오
  ———————————————————————
  ${Green_font_prefix} 1. 의존성 설치 및 풀 노드 설치 ${Font_color_suffix}
  ${Green_font_prefix} 2. 지갑 생성 ${Font_color_suffix}
