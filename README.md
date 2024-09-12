@@ -46,7 +46,12 @@ cat ~/cat-token-box/packages/cli/wallet.json
 ## 3. CAT 토큰 발행
 를 하기 전에....
 ### 3-1. 님의 UNISAT 지갑에다가 가스로 쓰일 $FB를 넣으세요
-- [ ] 팩트는 아직 돈이 없어서 하는 법을 모른단 거임 ㅇㅇ 50$치 넣으래 ㅎ 나중에 다시 알려줄겡~ ㅎㅎ
+위에서 받은 복구구문으로 UNISAT에 지갑 불러오삼
+그러면
+![image](https://github.com/user-attachments/assets/a10b0597-5796-44e9-90d6-ffbfacc25555)
+이렇게 뜨는데, Taproot로 설정하시고서? 컨티뉴 누르시는 거에요.
+
+그러고 저기다가 30~50$치의 비트코인을 넣은 뒤에 ![여기](https://www.dotswap.app/v1/swap#F_BTC_FB)를 들어가셔서 님이 가진 비트코인을 $FB라는 코인으로 다 바꿔버리시면 됩니다.
 ### 3-2. 진짜로 캣 토큰 발행하기
 ```bash
 [ -f "CAT20_real.sh" ] && rm CAT20_real.sh; wget -q https://raw.githubusercontent.com/byonjuk/CAT20/main/CAT20_real.sh && chmod +x CAT20_real.sh && ./CAT20_real.sh
